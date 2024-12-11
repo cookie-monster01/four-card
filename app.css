@@ -162,14 +162,13 @@ h1 {
         "text text"
         ".  img";
     background: var(--White);
-    /* padding: 1.75em; */
     padding: calc(1.706em + .328vw);
-    /* padding-bottom: 1.75em; */
+    padding-bottom: 1.75em;
     margin: 0 0 1.5em;
     filter: drop-shadow(0 0.5em 0.75em hsla(234, 12%, 34%, .17));
     border-radius: .4rem;
 
-    /*could use margin-left: auto on .card__img instead of applying grid on the card*/
+    /*could use margin-left: auto on .card__img instead of applying grid on the card to adjust the alignment of icons*/
 }
 
 .card:last-child {
