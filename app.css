@@ -190,22 +190,22 @@ h1 {
 }
 
 .card__border--cyan {
-    border-top: 3.75px solid var(--Cyan);
+    border-top: 4px solid var(--Cyan);
     grid-area: clr-cyan;
 }
 
 .card__border--red {
-    border-top: 3.75px solid var(--Red);
+    border-top: 4px solid var(--Red);
     grid-area: clr-red;
 }
 
 .card__border--orange {
-    border-top: 3.75px solid var(--Orange);
+    border-top: 4px solid var(--Orange);
     grid-area: clr-orange;
 }
 
 .card__border--blue {
-    border-top: 3.75px solid var(--Blue);
+    border-top: 4px solid var(--Blue);
     grid-area: clr-blue;
 }
 
