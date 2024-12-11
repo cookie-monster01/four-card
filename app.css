@@ -105,7 +105,6 @@ h1 {
 .intro__title {
     /* font-size: 1.5rem; */
     font-size: clamp(1.35rem, 1.024rem + 2.2vw, 2.25rem);
-    /* font-size: clamp(1.375rem, 1.059rem + 2.18vw, 2.25rem); */
     font-weight: 200;
     color: var(--Dark-Blue);
     letter-spacing: 0.25px;
