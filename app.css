@@ -1,0 +1,277 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+
+    --fs-body: .9375rem;
+    --fs-title-small: 1.5rem;
+    --fs-title-large: 2.25rem;
+    --fs-card-title: 1.25rem;
+    --fs-card-body: .8125rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+    line-height: 1.1;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    background: var(--Light-Gray);
+}
+
+h1 {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.intro__title {
+    /* font-size: 1.5rem; */
+    font-size: clamp(1.35rem, 1.024rem + 2.2vw, 2.25rem);
+    /* font-size: clamp(1.375rem, 1.059rem + 2.18vw, 2.25rem); */
+    font-weight: 200;
+    color: var(--Dark-Blue);
+    letter-spacing: 0.25px;
+    line-height: 1.5;
+    text-wrap: nowrap;
+}
+
+.intro__title--bold {
+    font-weight: 600;
+    color: var(--Dark-Blue);
+    margin: 0 0 1rem;
+}
+
+.intro__text {
+    font-size: var(--fs-body);
+    color: var(--Grayish-Blue);
+    letter-spacing: 0.1px;
+    line-height: 1.6;
+
+}
+
+.card__title--font {
+    font-size: var(--fs-card-title);
+    color: var(--Dark-Blue);
+}
+
+.card__text--font {
+    font-size: var(--fs-card-body);
+    color: var(--Grayish-Blue);
+    letter-spacing: .09px;
+    line-height: 1.77;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 5.3125em 2em 3.65em; */
+    padding: 0 2em 4.823em;
+    padding-top: calc(5.42em - .455vw);
+}
+
+.intro {
+    max-width: 540px;
+    /* margin: 0 0 4.75em; */
+    margin-bottom: calc(5em - 1.11vw);
+
+}
+
+.card {
+    max-width: 350px;
+    height: 94%;
+    display: grid;
+    grid-template-areas:
+        "title title"
+        "text text"
+        ".  img";
+    background: var(--White);
+    /* padding: 1.78em; */
+    padding: calc(1.706em + .328vw);
+    margin: 0 0 1.5em;
+    filter: drop-shadow(0 0.25em 0.25em rgba(0, 0, 0, .25));
+    border-radius: .5rem;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.card__title {
+    margin: 0 0 .4em;
+    grid-area: title;
+}
+
+.card__text {
+    margin: 0 0 2.15em;
+    grid-area: text;
+}
+
+.card__img {
+    width: 89.07%;
+    height: auto;
+    grid-area: img;
+}
+
+.card__border--cyan {
+    border-top: 4px solid var(--Cyan);
+    grid-area: clr-cyan;
+}
+
+.card__border--red {
+    border-top: 4px solid var(--Red);
+    grid-area: clr-red;
+}
+
+.card__border--orange {
+    border-top: 4px solid var(--Orange);
+    grid-area: clr-orange;
+}
+
+.card__border--blue {
+    border-top: 4px solid var(--Blue);
+    grid-area: clr-blue;
+}
+
+.attribution {
+    font-size: .6875rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 475px) {
+
+    .intro {
+        text-align: center;
+    }
+
+    .intro__title--bold {
+        margin-bottom: .9rem;
+    }
+
+    /* .card {
+        height: 250px;
+    } */
+
+    .card__img {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 992px) {
+
+    .card__grid {
+        display: grid;
+        grid-template-areas:
+
+            ". clr-red ."
+            "clr-cyan clr-red clr-blue"
+            "clr-cyan clr-orange clr-blue"
+            ". clr-orange .";
+        grid-template-columns: fit-content;
+        grid-template-rows: repeat(4, 133px);
+        /* grid-template-rows: repeat(4, 1fr); */
+    }
+
+    .card__margin--right {
+        margin: 0 1.875em 0 0;
+        place-self: center;
+    }
+
+    .card__margin--left {
+        margin: 0 0 0 1.875em;
+        place-self: center;
+    }
+
+    .card__margin--bottom {
+        margin: 0 0 1.875em;
+    }
+
+    .card:nth-of-type(3) {
+        margin: 0;
+        place-self: end;
+    }
+}
