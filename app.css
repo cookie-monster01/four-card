@@ -109,7 +109,6 @@ h1 {
     color: var(--Dark-Blue);
     letter-spacing: 0.25px;
     line-height: 1.5;
-    text-wrap: nowrap;
 }
 
 .intro__title--bold {
@@ -148,10 +147,10 @@ h1 {
 }
 
 .intro {
+    width: 100%;
     max-width: 540px;
     /* margin: 0 0 4.75em; */
     margin-bottom: calc(5em - 1.11vw);
-
 }
 
 .card {
