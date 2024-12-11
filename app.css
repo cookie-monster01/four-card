@@ -108,7 +108,7 @@ h1 {
     font-weight: 200;
     color: var(--Dark-Blue);
     letter-spacing: 0.25px;
-    line-height: 1.48;
+    line-height: 1.47;
 }
 
 .intro__title--bold {
@@ -142,7 +142,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     /* padding: 5.3125em 2em 3.65em; */
-    padding: 0 2em 4.823em;
+    padding: 0 2em 4.72em;
     padding-top: calc(5.42em - .455vw);
 }
 
@@ -165,7 +165,7 @@ h1 {
     /* padding: 1.78em; */
     padding: calc(1.706em + .328vw);
     margin: 0 0 1.5em;
-    filter: drop-shadow(0 0.35em 0.75em hsla(234, 12%, 34%, .25));
+    filter: drop-shadow(0 0.5em 0.75em hsla(234, 12%, 34%, .17));
     border-radius: .5rem;
 }
 
